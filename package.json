@@ -1,0 +1,25 @@
+{
+  "name": "airtable-shortcuts",
+  "version": "1.0.12",
+  "description": "Custom keyboard shortcuts for Airtable",
+  "main": "dist/content.js",
+  "scripts": {
+    "build": "./build.sh",
+    "copy-manifest": "cp src/manifest.json dist/",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "dev": "npm run clean && npm run build && npm run watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "airtable",
+    "chrome-extension",
+    "shortcuts"
+  ],
+  "author": "Frederick Lawson",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/chrome": "^0.0.260"
+  }
+}

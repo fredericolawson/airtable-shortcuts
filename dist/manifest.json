@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Airtable Shortcuts",
+  "version": "1.0.12",
+  "description": "Custom keyboard shortcuts for Airtable",
+  "content_scripts": [
+    {
+      "matches": ["*://*.airtable.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://*.airtable.com/*"]
+}

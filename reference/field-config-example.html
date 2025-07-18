@@ -1,0 +1,815 @@
+<div
+  role="dialog"
+  aria-label="Field customization"
+  class="colors-background-raised-surface rounded-big baymax shadow-elevation-high border-none overflow-auto absolute"
+  style="min-width: 400px; max-width: 900px; max-height: inherit"
+>
+  <div class="col-12 relative">
+    <div class="px2 pt1 pb1">
+      <input
+        aria-label="Field name"
+        type="text"
+        name="columnNameInput"
+        class="p1 mt1 animate col-12 colors-background-raised-control rounded-big border-thick border-transparent border-blue-focus shadow-elevation-low shadow-elevation-low-hover"
+        placeholder="Formula"
+        value="Formula"
+        style="height: 32px"
+      />
+      <div
+        tabindex="0"
+        role="button"
+        class="rounded-big overflow-hidden flex animate mt1-and-half colors-background-default border-none focus-visible-stroked-inset-blue-focus outline-offset-0 shadow-elevation-low shadow-elevation-low-hover pointer"
+        style="height: 32px"
+      >
+        <div class="flex-auto flex">
+          <div class="flex-auto flex">
+            <div
+              tabindex="0"
+              role="button"
+              aria-label="Field type"
+              class="flex-auto flex items-center px1 pointer animate rounded-big colors-background-default border-none focus-visible-stroked-inset-blue-focus outline-offset-0 shadow-elevation-low shadow-elevation-low-hover"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="flex-none flex-none mr1"
+                style="shape-rendering: geometricprecision"
+              >
+                <use
+                  fill="currentColor"
+                  href="/icons/icon_definitions.svg?v=3f4dc86499502cafb983c908ca411cf9#Formula"
+                ></use>
+              </svg>
+              <div class="flex-auto flex items-center">
+                <div class="truncate text-dark">Formula</div>
+              </div>
+              <div
+                class="quieter sm-vh-show flex-none flex items-center px-half"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  class="flex-none icon"
+                  style="shape-rendering: geometricprecision"
+                >
+                  <use
+                    fill="currentColor"
+                    href="/icons/icon_definitions.svg?v=3f4dc86499502cafb983c908ca411cf9#Question"
+                  ></use>
+                </svg>
+              </div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="flex-none flex-none quiet"
+                style="shape-rendering: geometricprecision"
+              >
+                <use
+                  fill="currentColor"
+                  href="/icons/icon_definitions.svg?v=3f4dc86499502cafb983c908ca411cf9#ChevronDown"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="animate-slow pb-half">
+        <div class="animate-opacity-fade-in">
+          <div class="relative">
+            <div class="quiet mt-half px2 sm-vh-hide max-width-2 mb2">
+              <span
+                >Compute values based on fields.<a
+                  href="https://support.airtable.com/docs/formula-field-reference"
+                  class="link understroke pointer ml-half"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Learn more</a
+                ></span
+              >
+            </div>
+            <div class="typeOptionsContainer relative">
+              <div class="col-12">
+                <div>
+                  <div role="tablist" class="px2 flex">
+                    <div
+                      tabindex="0"
+                      role="tab"
+                      class="rounded-top mr2 py-half strong css-mcd9wz css-1j72ivj"
+                      aria-selected="true"
+                      aria-controls="id_fccd53569d03b46c5aeffc5f2a1ecd0c"
+                      id="id_ff424ea70d0d24a95e5d75698a1b02a2"
+                    >
+                      Formula
+                    </div>
+                    <div
+                      tabindex="-1"
+                      role="tab"
+                      class="rounded-top mr2 py-half quiet link-unquiet pointer css-p2a4g8"
+                      aria-selected="false"
+                      aria-controls="id_b4a0efb6fe4a0cfaa79c11771c5b650b"
+                      id="id_8b89ad406180603b2e471333a1992eaf"
+                    >
+                      Formatting
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mx2"
+                  style="
+                    border-bottom: 1px solid var(--colors-border-default);
+                    position: relative;
+                    margin-top: -1px;
+                  "
+                ></div>
+                <div
+                  role="tabpanel"
+                  id="id_fccd53569d03b46c5aeffc5f2a1ecd0c"
+                  aria-labelledby="id_ff424ea70d0d24a95e5d75698a1b02a2"
+                >
+                  <div>
+                    <div class="mx1">
+                      <div class="formulaAutocomplete formula relative">
+                        <div class="flex flex-column p1">
+                          <div class="relative" style="width: 100%">
+                            <div
+                              class="content-box rounded-big shadow-elevation-low shadow-elevation-low-hover"
+                              style=""
+                            >
+                              <div
+                                class="overflow-hidden css-ngbrsy"
+                                style="
+                                  resize: both;
+                                  max-height: 599px;
+                                  height: 70px;
+                                "
+                              >
+                                <div
+                                  aria-multiline="true"
+                                  aria-label="Formula input"
+                                  class="width-full height-full rounded-big code"
+                                  data-keybinding-context="3"
+                                  data-mode-id="airtableFormulas"
+                                  style="
+                                    --codelens-font-features_ee1f63: 'liga' off,
+                                      'calt' off;
+                                  "
+                                >
+                                  <div
+                                    class="monaco-editor no-user-select mac showUnused showDeprecated vs"
+                                    role="code"
+                                    data-uri="inmemory://model/3"
+                                    style="width: 384px; height: 70px"
+                                  >
+                                    <div
+                                      data-mprt="3"
+                                      class="overflow-guard"
+                                      style="width: 384px; height: 70px"
+                                    >
+                                      <div
+                                        class="margin"
+                                        role="presentation"
+                                        aria-hidden="true"
+                                        style="
+                                          position: absolute;
+                                          transform: translate3d(0px, 0px, 0px);
+                                          contain: strict;
+                                          top: 0px;
+                                          height: 70px;
+                                          width: 16px;
+                                        "
+                                      >
+                                        <div
+                                          class="glyph-margin"
+                                          style="
+                                            left: 0px;
+                                            width: 0px;
+                                            height: 70px;
+                                          "
+                                        ></div>
+                                        <div
+                                          class="margin-view-zones"
+                                          role="presentation"
+                                          aria-hidden="true"
+                                          style="position: absolute"
+                                        ></div>
+                                        <div
+                                          class="margin-view-overlays"
+                                          role="presentation"
+                                          aria-hidden="true"
+                                          style="
+                                            position: absolute;
+                                            width: 16px;
+                                            font-family: Menlo, Monaco,
+                                              'Courier New', monospace;
+                                            font-weight: normal;
+                                            font-size: 12px;
+                                            font-feature-settings: 'liga' 0,
+                                              'calt' 0;
+                                            line-height: 18px;
+                                            letter-spacing: 0px;
+                                            height: 70px;
+                                          "
+                                        >
+                                          <div
+                                            style="
+                                              position: absolute;
+                                              top: 8px;
+                                              width: 100%;
+                                              height: 18px;
+                                            "
+                                          >
+                                            <div
+                                              class="current-line"
+                                              style="width: 16px; height: 18px"
+                                            ></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="monaco-scrollable-element editor-scrollable vs mac"
+                                        role="presentation"
+                                        data-mprt="5"
+                                        style="
+                                          position: absolute;
+                                          overflow: hidden;
+                                          left: 16px;
+                                          width: 368px;
+                                          height: 70px;
+                                        "
+                                      >
+                                        <div
+                                          class="lines-content monaco-editor-background"
+                                          style="
+                                            position: absolute;
+                                            overflow: hidden;
+                                            width: 1e6px;
+                                            height: 1e6px;
+                                            transform: translate3d(
+                                              0px,
+                                              0px,
+                                              0px
+                                            );
+                                            contain: strict;
+                                            top: 0px;
+                                            left: 0px;
+                                          "
+                                        >
+                                          <div
+                                            class="view-overlays"
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            style="
+                                              position: absolute;
+                                              height: 0px;
+                                              width: 368px;
+                                            "
+                                          >
+                                            <div
+                                              style="
+                                                position: absolute;
+                                                top: 8px;
+                                                width: 100%;
+                                                height: 18px;
+                                              "
+                                            ></div>
+                                          </div>
+                                          <div
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            class="view-rulers"
+                                          ></div>
+                                          <div
+                                            class="view-zones"
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            style="position: absolute"
+                                          ></div>
+                                          <div
+                                            class="view-lines monaco-mouse-cursor-text"
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            data-mprt="7"
+                                            style="
+                                              position: absolute;
+                                              font-family: Menlo, Monaco,
+                                                'Courier New', monospace;
+                                              font-weight: normal;
+                                              font-size: 12px;
+                                              font-feature-settings: 'liga' 0,
+                                                'calt' 0;
+                                              line-height: 18px;
+                                              letter-spacing: 0px;
+                                              width: 368px;
+                                              height: 70px;
+                                            "
+                                          >
+                                            <div
+                                              style="top: 8px; height: 18px"
+                                              class="view-line"
+                                            >
+                                              <span
+                                                ><span class="mtk27"
+                                                  >"test&nbsp;tets"</span
+                                                ></span
+                                              >
+                                            </div>
+                                          </div>
+                                          <div
+                                            data-mprt="1"
+                                            class="contentWidgets"
+                                            style="position: absolute; top: 0px"
+                                          >
+                                            <div
+                                              class="codicon-light-bulb codicon"
+                                              widgetid="LightBulbWidget"
+                                              title="Show Fixes (⌘.)"
+                                              style="
+                                                position: absolute;
+                                                visibility: hidden;
+                                                max-width: 368px;
+                                              "
+                                            ></div>
+                                          </div>
+                                          <div
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            class="cursors-layer cursor-line-style cursor-solid"
+                                          >
+                                            <div
+                                              class="cursor monaco-mouse-cursor-text"
+                                              style="
+                                                height: 18px;
+                                                top: 8px;
+                                                left: 78px;
+                                                font-family: Menlo, Monaco,
+                                                  'Courier New', monospace;
+                                                font-weight: normal;
+                                                font-size: 12px;
+                                                font-feature-settings: 'liga' 0,
+                                                  'calt' 0;
+                                                line-height: 18px;
+                                                letter-spacing: 0px;
+                                                display: block;
+                                                visibility: hidden;
+                                                width: 2px;
+                                              "
+                                            ></div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          role="presentation"
+                                          aria-hidden="true"
+                                          class="invisible scrollbar horizontal"
+                                          style="
+                                            position: absolute;
+                                            width: 354px;
+                                            height: 0px;
+                                            left: 0px;
+                                            bottom: 0px;
+                                          "
+                                        >
+                                          <div
+                                            class="slider"
+                                            style="
+                                              position: absolute;
+                                              top: 0px;
+                                              left: 0px;
+                                              height: 12px;
+                                              transform: translate3d(
+                                                0px,
+                                                0px,
+                                                0px
+                                              );
+                                              contain: strict;
+                                              width: 354px;
+                                            "
+                                          ></div>
+                                        </div>
+                                        <canvas
+                                          class="decorationsOverviewRuler"
+                                          aria-hidden="true"
+                                          width="0"
+                                          height="0"
+                                          style="
+                                            position: absolute;
+                                            transform: translate3d(
+                                              0px,
+                                              0px,
+                                              0px
+                                            );
+                                            contain: strict;
+                                            top: 0px;
+                                            right: 0px;
+                                            width: 14px;
+                                            height: 70px;
+                                          "
+                                        ></canvas>
+                                        <div
+                                          role="presentation"
+                                          aria-hidden="true"
+                                          class="invisible scrollbar vertical"
+                                          style="
+                                            position: absolute;
+                                            width: 14px;
+                                            height: 70px;
+                                            right: 0px;
+                                            top: 0px;
+                                          "
+                                        >
+                                          <div
+                                            class="slider"
+                                            style="
+                                              position: absolute;
+                                              top: 0px;
+                                              left: 0px;
+                                              width: 14px;
+                                              transform: translate3d(
+                                                0px,
+                                                0px,
+                                                0px
+                                              );
+                                              contain: strict;
+                                              height: 70px;
+                                            "
+                                          ></div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        role="presentation"
+                                        aria-hidden="true"
+                                        style="width: 384px"
+                                      ></div>
+                                      <textarea
+                                        data-mprt="6"
+                                        class="inputarea monaco-mouse-cursor-text"
+                                        wrap="off"
+                                        autocorrect="off"
+                                        autocapitalize="off"
+                                        autocomplete="off"
+                                        spellcheck="false"
+                                        aria-label="Editor content;Press Alt+F1 for Accessibility Options."
+                                        tabindex="0"
+                                        role="textbox"
+                                        aria-roledescription="editor"
+                                        aria-multiline="true"
+                                        aria-haspopup="false"
+                                        aria-autocomplete="both"
+                                        style="
+                                          font-family: Menlo, Monaco,
+                                            'Courier New', monospace;
+                                          font-weight: normal;
+                                          font-size: 12px;
+                                          font-feature-settings: 'liga' 0,
+                                            'calt' 0;
+                                          line-height: 18px;
+                                          letter-spacing: 0px;
+                                          top: 8px;
+                                          left: 95px;
+                                          width: 1px;
+                                          height: 18px;
+                                        "
+                                      ></textarea>
+                                      <div
+                                        class="monaco-editor-background textAreaCover"
+                                        style="
+                                          position: absolute;
+                                          top: 0px;
+                                          left: 0px;
+                                          width: 0px;
+                                          height: 0px;
+                                        "
+                                      ></div>
+                                      <div
+                                        data-mprt="4"
+                                        class="overlayWidgets"
+                                        style="width: 384px"
+                                      >
+                                        <div
+                                          class="accessibilityHelpWidget"
+                                          role="dialog"
+                                          aria-hidden="true"
+                                          widgetid="editor.contrib.accessibilityHelpWidget"
+                                          style="
+                                            display: none;
+                                            position: absolute;
+                                          "
+                                        >
+                                          <div role="document"></div>
+                                        </div>
+                                        <div
+                                          widgetid="editor.contrib.quickInputWidget"
+                                          style="
+                                            position: absolute;
+                                            top: 0px;
+                                            right: 50%;
+                                          "
+                                        ></div>
+                                      </div>
+                                      <div
+                                        data-mprt="8"
+                                        class="minimap slider-mouseover"
+                                        role="presentation"
+                                        aria-hidden="true"
+                                        style="
+                                          position: absolute;
+                                          left: 0px;
+                                          width: 0px;
+                                          height: 70px;
+                                        "
+                                      >
+                                        <div
+                                          class="minimap-shadow-hidden"
+                                          style="height: 70px"
+                                        ></div>
+                                        <canvas
+                                          width="0"
+                                          height="140"
+                                          style="
+                                            position: absolute;
+                                            left: 0px;
+                                            width: 0px;
+                                            height: 70px;
+                                          "
+                                        ></canvas
+                                        ><canvas
+                                          class="minimap-decorations-layer"
+                                          width="0"
+                                          height="140"
+                                          style="
+                                            position: absolute;
+                                            left: 0px;
+                                            width: 0px;
+                                            height: 70px;
+                                          "
+                                        ></canvas>
+                                        <div
+                                          class="minimap-slider"
+                                          style="
+                                            position: absolute;
+                                            transform: translate3d(
+                                              0px,
+                                              0px,
+                                              0px
+                                            );
+                                            contain: strict;
+                                            width: 0px;
+                                          "
+                                        >
+                                          <div
+                                            class="minimap-slider-horizontal"
+                                            style="
+                                              position: absolute;
+                                              width: 0px;
+                                              height: 0px;
+                                            "
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      data-mprt="2"
+                                      class="overflowingContentWidgets"
+                                    >
+                                      <div
+                                        class="monaco-editor rename-box"
+                                        widgetid="__renameInputWidget"
+                                        style="
+                                          background-color: rgb(243, 243, 243);
+                                          box-shadow: rgba(0, 0, 0, 0.16) 0px
+                                            0px 8px 2px;
+                                          color: rgb(97, 97, 97);
+                                          position: fixed;
+                                          visibility: hidden;
+                                          max-width: 1724px;
+                                        "
+                                      >
+                                        <input
+                                          class="rename-input"
+                                          type="text"
+                                          aria-label="Rename input. Type new name and press Enter to commit."
+                                          style="
+                                            font-family: Menlo, Monaco,
+                                              'Courier New', monospace;
+                                            font-weight: normal;
+                                            font-size: 12px;
+                                            background-color: rgb(
+                                              255,
+                                              255,
+                                              255
+                                            );
+                                            border-width: 0px;
+                                            border-style: none;
+                                          "
+                                        />
+                                        <div
+                                          class="rename-label"
+                                          style="font-size: 9.6px"
+                                        >
+                                          Enter to Rename, ⇧Enter to Preview
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="monaco-hover"
+                                        tabindex="0"
+                                        role="tooltip"
+                                        widgetid="editor.contrib.modesContentHoverWidget"
+                                        style="
+                                          position: fixed;
+                                          visibility: hidden;
+                                          max-width: 1724px;
+                                        "
+                                      >
+                                        <div
+                                          class="monaco-scrollable-element mac"
+                                          role="presentation"
+                                          style="
+                                            position: relative;
+                                            overflow: hidden;
+                                          "
+                                        >
+                                          <div
+                                            class="monaco-hover-content"
+                                            style="
+                                              overflow: hidden;
+                                              font-size: 12px;
+                                              line-height: 18px;
+                                              max-height: 250px;
+                                              max-width: 500px;
+                                            "
+                                          ></div>
+                                          <div
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            class="invisible scrollbar horizontal"
+                                            style="position: absolute"
+                                          >
+                                            <div
+                                              class="slider"
+                                              style="
+                                                position: absolute;
+                                                top: 0px;
+                                                left: 0px;
+                                                height: 10px;
+                                                transform: translate3d(
+                                                  0px,
+                                                  0px,
+                                                  0px
+                                                );
+                                                contain: strict;
+                                              "
+                                            ></div>
+                                          </div>
+                                          <div
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            class="invisible scrollbar vertical"
+                                            style="position: absolute"
+                                          >
+                                            <div
+                                              class="slider"
+                                              style="
+                                                position: absolute;
+                                                top: 0px;
+                                                left: 0px;
+                                                width: 10px;
+                                                transform: translate3d(
+                                                  0px,
+                                                  0px,
+                                                  0px
+                                                );
+                                                contain: strict;
+                                              "
+                                            ></div>
+                                          </div>
+                                          <div class="shadow"></div>
+                                          <div class="shadow"></div>
+                                          <div class="shadow"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="context-view"
+                                      aria-hidden="true"
+                                      style="display: none"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="min-width-full flex border-top colors-border-subtle p1 pr2 items-center colors-background-subtler rounded-big-bottom small truncate"
+                                style="width: 0px"
+                              >
+                                Preview for
+                                <div
+                                  tabindex="0"
+                                  role="button"
+                                  class="rounded px1 ml-half foreign-key-blue focus-visible pointer"
+                                  aria-label="select a record to preview the formula result for"
+                                  id="id_1a045e1027c47e9f78ea50a4a006e54a"
+                                >
+                                  <p
+                                    title="Dive into Adventure! Join us for an unforgettable scuba diving experience in Bermuda. Book your dive today!"
+                                    class="truncate"
+                                    style="max-width: 100px"
+                                  >
+                                    Dive into Adventure! Join us for an
+                                    unforgettable scuba diving experience in
+                                    Bermuda. Book your dive today!
+                                  </p>
+                                </div>
+                                :
+                                <div class="ml-half">
+                                  <p class="truncate" title="test tets">
+                                    test tets
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-color-quiet mt1">
+                            <div
+                              id="ai-formula-assistant"
+                              class="flex flex-column gap-half"
+                            >
+                              <div
+                                class="width-full relative"
+                                style="z-index: 1"
+                              >
+                                <button
+                                  class="pointer items-center justify-center border-box text-decoration-none print-color-exact focus-visible rounded-big ignore-baymax-defaults border-none colors-foreground-default colors-background-raised-control shadow-elevation-low shadow-elevation-low-hover px1 button-size-small flex-inline text-color-quiet"
+                                  type="button"
+                                  aria-disabled="false"
+                                >
+                                  <span
+                                    class="truncate noevents button-text-label no-user-select"
+                                    >Create formula with AI</span
+                                  >
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pt1 pb2 px2 flex items-center justify-between">
+      <button
+        class="pointer items-center justify-center border-box text-decoration-none print-color-exact focus-visible rounded-big ignore-baymax-defaults border-none colors-foreground-default background-transparent colors-background-selected-hover px1-and-half button-size-default flex-inline flex flex-none items-center"
+        type="button"
+        aria-disabled="false"
+        aria-label="Add description"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          class="flex-none noevents mr1"
+          style="shape-rendering: geometricprecision"
+        >
+          <use
+            fill="currentColor"
+            href="/icons/icon_definitions.svg?v=3f4dc86499502cafb983c908ca411cf9#Plus"
+          ></use></svg
+        ><span class="truncate noevents button-text-label no-user-select"
+          >Add description</span
+        >
+      </button>
+      <div class="flex items-baseline justify-end ml-auto">
+        <button
+          class="pointer items-center justify-center border-box text-decoration-none print-color-exact focus-visible rounded-big ignore-baymax-defaults border-none colors-foreground-default background-transparent colors-background-selected-hover px1-and-half button-size-default flex-inline"
+          type="button"
+          aria-disabled="false"
+          id="columnDialogCancelButton"
+        >
+          <span class="truncate noevents button-text-label no-user-select"
+            >Cancel</span
+          ></button
+        ><span
+          ><button
+            class="pointer items-center justify-center border-box text-decoration-none print-color-exact focus-visible rounded-big ignore-baymax-defaults border-none text-white font-weight-strong colors-background-primary-control shadow-elevation-low shadow-elevation-low-hover px1-and-half button-size-default flex-inline ml1 flex flex-none items-center"
+            type="button"
+            aria-disabled="false"
+            data-tutorial-selector-id="columnDialogCreateButton"
+            data-testid="column-dialog-create-button"
+          >
+            <span class="truncate noevents button-text-label no-user-select"
+              >Save</span
+            >
+          </button></span
+        >
+      </div>
+    </div>
+  </div>
+</div>
